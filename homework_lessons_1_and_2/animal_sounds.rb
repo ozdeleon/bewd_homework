@@ -29,6 +29,7 @@ elsif answer == "no"
 else
   puts "interesting..."
 end
+
 # Ask the user if they want to play another game.
 puts "Do you want to play another game? You can answer yes or no."
 answer_2 = gets.chomp
