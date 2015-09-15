@@ -7,7 +7,7 @@ puts animal + " is a good one!"
 # Asks for animal sound
 puts "What sound does a #{animal} make?"
 sound = gets.chomp.downcase.strip
-puts "#{(sound + "," + " ") * 3}is a interesting sound don't you think?"
+puts "#{(sound + "," + " ") * 3}is an interesting sound don't you think?"
 
 puts "Do you want to sing a little song? You can answer yes or no."
 answer = gets.chomp
