@@ -38,8 +38,10 @@ if answer_2 == "yes"
   puts "Great! Let's make the #{animal} #{sound} on command!"
   puts "How many times do you want the #{animal} to #{sound}?"
   num = gets.to_i
-  puts animal.upcase + " " + "I command you to #{sound} #{num} times!!!"
-  puts animal + ":" + " " + (sound + "," + " ") * (num - 1) + sound + " " + "E-I-E-I-O."
+  #puts animal.upcase + " " + "I command you to #{sound} #{num} times!!!"
+  puts "#{animal.upcase}, I command you to #{sound} #{num} times!!!"
+  #puts animal + ":" + " " + (sound + "," + " ") * (num - 1) + sound + " " + "E-I-E-I-O."
+  puts "#{animal}, #{(sound + ",") * (num - 1)} #{sound}, E-I-E-I-O."
 elsif answer_2 == "no"
   puts "You're no fun."
 else
