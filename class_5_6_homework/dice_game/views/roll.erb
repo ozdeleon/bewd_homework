@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Dice Game</title>
+	<link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+	<div class="score fade-in two">
+		<span class="score1">your roll: <b><%= @user_roll %></span>
+		<span class="score2">comp roll: <b><%= @comp_roll %></span>
+	</div>
+
+	<div class="box_dice_2 fade-in one">
+		<div class="box_up"></div>
+		<div class="big_title fade-in one">
+			<% if @user_roll > @comp_roll %>
+				<h2>You won!</h2>
+			<% elsif @comp_roll > @user_roll %>
+				<h2>You lost.</h2>
+			<% else %>
+				<h2>You tied.</h2>
+			<% end %>
+		</div>
+		<div class="box_down"></div>
+	</div>
+
+	<div id= "click_play" class="fade-in two">
+		<a href="/dice_roll">
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+			<path fill="#444444" d="M12 5.016q3.328 0 5.672 2.344t2.344 5.625q0 3.328-2.367 5.672t-5.648 2.344-5.648-2.344-2.367-5.672h2.016q0 2.484 1.758 4.242t4.242 1.758 4.242-1.758 1.758-4.242-1.758-4.242-4.242-1.758v4.031l-5.016-5.016 5.016-5.016v4.031z"></path>
+			</svg>
+		</a>
+	</div>
+		
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+
+</body>
+</html>
