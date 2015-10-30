@@ -1,0 +1,311 @@
+/*-----------------------------------
+	This is just a prototype. 
+	Not mobile friendly
+-------------------------------------*/
+
+/*----------------------------------
+  Global Styles
+------------------------------------*/
+
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html  {
+  height: 100%;
+  background-color: #fff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body, html {
+  /* prevent horizontal scrolling */
+  overflow-x: hidden;
+}
+
+
+
+h4 {
+  margin: 0;
+}
+
+.container {
+  max-width: 900px;
+  min-width: 380px;
+  margin: 2rem auto;
+  /*border: 1px solid;*/
+}
+
+a:link,
+:visited,
+:hover,
+:active
+ {
+  text-decoration: none;
+  color: #000;
+}
+
+/*----------------------------------
+  Logo nyoozy
+------------------------------------*/
+
+.log_box {
+  display: block;
+  width: 90px;
+  margin: 2rem auto 2rem 4%;
+  border: 2.3px solid;
+  border-color: #000;
+}
+
+.log1 h1{
+  color: #000;
+  text-align: center;
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
+  /*border: 1px solid;*/
+  text-rendering: optimizeLegibility;
+}
+
+.ny h1{
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.oo h1 {
+  margin: 0;
+}
+
+.zy h1 {
+  margin: -7px 0 14px 0;
+}
+
+/*----------------------------------
+  Weather
+------------------------------------*/
+
+.weather {
+  display: block;
+  float: right;
+  width: 105px;
+  margin: 2rem auto 2rem 4%;
+  text-align: center;
+  margin-right: 4%;
+  padding: 1rem 2rem;
+  border: 2.3px solid;
+  border-color: #000;
+}
+
+.icon {
+  margin-bottom: .5rem;
+  font-weight: 500;
+}
+
+.temp {
+  font-size: 2rem;
+  border-top: 1.8px solid;
+  padding-top: .3rem;
+  font-weight: 200;
+}
+
+/*----------------------------------
+  Article select section
+------------------------------------*/
+
+.news_place {
+  margin: 4.5rem auto 2rem auto;
+  max-width: 850px;
+  min-width: 380px;
+  height: 200px;
+  padding: 0 .2rem;
+  /*border: 1px solid;*/
+}
+
+.box {
+  /*text-transform: uppercase;*/
+  font-weight: 400;
+  margin: .8rem .1rem;
+  width: 275px;
+  height: 250px;
+  /*border: 2.3px solid;*/
+}
+
+.box_title {
+  width: 50%;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 6.4rem auto 0;
+  /*background-color: white;*/
+  border: 2px solid;
+  border-color: #fff;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.box_title h4 {
+  font-weight: 300;
+  color: #fff;
+  margin: .3rem 0;
+
+}
+
+.box_title_r {
+  text-align: center;
+  border: 2px solid;
+  border-color: #fff;
+}
+
+.box_n{
+  float: left;
+  background-image: url(assets/Halloween-Party_BW.jpg);
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: background-image ease-out .5s;
+	 transition: background-image ease-out .5s;
+}
+
+.box_n:hover {
+  background-image: url(assets/Halloween-Party.jpg);
+  -webkit-filter: sepia(0.5) hue-rotate(-30deg) saturate(1.2) contrast(0.8);
+  filter: sepia(0.5) hue-rotate(-30deg) saturate(1.2) contrast(0.8);
+}
+
+.box_r {
+  float: left;
+  background-image: url(assets/superpowers_BW.jpg);
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: background-image ease-out .5s;
+	 transition: background-image ease-out .5s;
+}
+
+.box_r:hover {
+  background-image: url(assets/superpowers.jpg);
+  -webkit-filter: sepia(0.5) hue-rotate(-30deg) saturate(1.2) contrast(0.8);
+  filter: sepia(0.5) hue-rotate(-30deg) saturate(1.2) contrast(0.8);
+}
+
+.box_h {
+  float: right;
+  background-image: url(assets/endurancehoriz-18_BW.jpg);
+  background-position: center;
+  background-size: cover;
+  -webkit-transition: background-image ease-out .9s;
+   transition: background-image ease-out .9s;
+}
+
+.box_h:hover {
+  background-image: url(assets/endurancehoriz-18.jpg);
+  -webkit-filter: sepia(0.5) hue-rotate(-30deg) saturate(1.2) contrast(0.8);
+  filter: sepia(0.5) hue-rotate(-30deg) saturate(1.2) contrast(0.8);
+}
+
+/*----------------------------------
+  Article list
+------------------------------------*/
+
+
+ul {
+  padding: 0 4%;
+
+}
+ul h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-top: 4rem;
+  margin-bottom: -20px;
+
+}
+
+ul img {
+  width: 100%;
+  margin-top: 3rem;
+}
+
+ul li {
+  margin-bottom: .3rem;
+  padding: 1rem 0 .3rem 0;
+  font-size: 2rem;
+
+}
+
+li {
+  list-style: none;
+}
+
+a h4 {
+  font-weight: 300;
+  color: #4D4D4D;
+  margin-bottom: 2rem;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    color: #333; /* old IE */
+    background-color: #333; /* Modern Browsers */
+}
+
+/* --------------------------
+	ANIMATE
+----------------------------- */
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+	opacity:0;
+	-webkit-animation:fadeIn ease-in 1;
+	-moz-animation:fadeIn ease-in 1;
+	animation:fadeIn ease-in 1;
+
+	-webkit-animation-fill-mode:forwards;
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+
+	-webkit-animation-duration:1s;
+	-moz-animation-duration:1s;
+	animation-duration:1s;
+}
+
+.fade-in.one {
+	-webkit-animation-delay: 0.3s;
+	-moz-animation-delay: 0.3s;
+	animation-delay: 0.3s;
+}
+
+.fade-in.two {
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay:1s;
+	animation-delay: 1s;
+}
+
+.fade-in.three {
+	-webkit-animation-delay: 1.8s;
+	-moz-animation-delay: 1.8s;
+	animation-delay: 1.8s;
+}
+
+/*----------------------------------
+  Clearfix
+------------------------------------*/
+
+.news_place {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.back_icon {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.clearfix:before, .clearfix:after {content: " "; display: table;}
+.clearfix:after {clear:both;}
+.clearfix {*zoom:1;}

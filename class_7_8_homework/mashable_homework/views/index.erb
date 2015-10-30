@@ -1,0 +1,24 @@
+<h1>New headlines</h1>
+<ul>
+  <% @articles["new"].each do |article|%>
+    <li><%= "#{article['title']} by: #{article['author']}" %></li>
+    <!-- <img src="<%= article['feature_image'] %>" alt="" /> -->
+    <a href="<%= article['link'] %>" target="_blank">Read more ></a>
+  <% end %>
+</ul>
+
+<h1>Rising headlines</h1>
+<ul>
+  <% @articles["rising"].each do |article| %>
+    <li><%= "#{article['title']} by #{article['author']}" %></li>
+  <% end %>
+</ul>
+
+<h1>Hot headlines</h1>
+<ul>
+  <% @articles["hot"].each do |article| %>
+    <li><%= "#{article['title']} by: #{article['author']}" %></li>
+  <% end %>
+</ul>
+
+<h1>This is the weather</h1>

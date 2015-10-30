@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>News home</title>
+    <link rel="stylesheet" href="styles.css" media="screen">
+    <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body>
+
+<div class="container">
+
+
+  <a href="/">
+    <div class="log_box">
+      <div class="log1 ny">
+        <h1>ny</h1>
+      </div>
+      <div class="log1 oo">
+        <h1>ōō</h1>
+      </div>
+      <div class="log1 zy">
+        <h1>zy</h1>
+      </div>
+    </div>
+  </a>
+
+    <a href="new">
+      <div class="news_place">
+        <span class="box box_n fade-in one">
+          <div class="box_title">
+            <h4>new</h4>
+          </div>
+        </span>
+      </a>
+
+      <a href="rising">
+        <span class=" box box_r fade-in two">
+          <div class="box_title box_title_r">
+            <h4>rising</h4>
+          </div>
+        </span>
+      </a>
+
+      <a href="hot">
+        <span class=" box box_h fade-in three">
+          <div class="box_title">
+            <h4>hot</h4>
+          </div>
+        </span>
+      </a>
+
+    </div>
+
+
+      <div class="weather">
+        <h4 class="icon"><%= "#{@weathers['currently']['icon']}" %></h4>
+        <h4 class="temp"><%= "#{@weathers['currently']['temperature'].to_int}" %>&deg;</h4>
+      </div>
+
+
+</div>
+  </body>
+</html>
